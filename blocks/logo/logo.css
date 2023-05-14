@@ -1,0 +1,212 @@
+
+main .logo-container {
+    background-color: #1A0032;
+     display: block;
+     font-size: 12px;
+    width:1710px;
+    height: 125px;;
+     margin-top: 0%;
+     padding-top: 5px;
+     text-align: center;
+     margin-top: -4%;
+ }
+
+ main .logo-container .columns.logo img {
+    width: 23%;
+    padding-bottom: -20px;
+    margin-top: -50px;
+    height: 64px;
+    object-fit: contain;
+    padding-left: 120px;
+
+  }
+
+  main .logo-container > div:nth-child(2) > p > picture > img{
+
+    padding-top: 0px;
+    margin-top: -20px;
+
+  }
+
+  .columns.logo.block> div > div:first-child{
+      padding-right: 150px;
+    
+  }
+
+  .columns.logo.block> div > div:nth-child(4){
+      margin-left: -100px;
+    
+  }
+
+   .columns.logo.block> div > div:nth-child(3){
+      margin-left: -100px;
+    
+  }
+
+   .columns.logo.block> div > div:nth-child(5){
+      margin-left: -100px;
+    
+  }
+.columns.logo.block > div {
+  display: flex;
+  /* height: 200px; */
+}
+  /* .columns.logo.block> div > div:first-child > picture {
+    background-color: red;
+    
+} */
+
+.columns.logo.block > div > div:first-child > picture > img{
+  object-fit: contain;
+
+
+}
+
+.columns.logo.block > div > div{
+  padding-left:0px;
+  width: 1px;
+/*  margin-right: 100px;*/
+ }
+
+
+  main .logo-container .columns p:first-child  {
+     margin:0px;
+     padding: 0px;
+     margin-bottom: 0px;
+     height: 0px;
+  } 
+
+  main .logo-container .columns p:nth-child(n+2) {
+    font-size: 0.9vw;
+     color: white;
+     font-family: Helvetica, sans-serif;
+     letter-spacing: 0.2px;
+     margin:0px;
+     padding:0px;
+     text-align: center;
+  }
+
+  main .logo-container .columns p {
+    font-size: 0.9vw;
+     color: white;
+     font-family: Helvetica, sans-serif;
+     letter-spacing: 0.2px;
+  }  
+
+   main .logo-container .columns div {
+   padding-left: 60px;
+   column-gap: normal;
+   margin-top: -55px;
+  } 
+/* 
+  main .logo-container .columns > div > div:last-child{
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+  } */
+
+  main .logo-container .columns > div > div:first-child{
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+  }
+
+  main .logo-container .columns > div > div:last-child > p:first-child{
+    color: white;
+    font-size: 1.6em;
+    padding-bottom: 40px;
+    padding-left: 25px;
+
+  }
+
+    /* main .logo-container .columns div > div:first-child {
+width: 500px;
+  }   */
+
+ 
+
+
+  /* main .logo-container .columns div:nth-child(4) {
+    border-right: 2px solid white;
+    margin: 0.5% 0px;
+  } */
+
+  /* main .logo-container .columns div:nth-child(5) img {
+    width: 100%;
+  } */
+
+ 
+
+  main .logo-container .columns > div > div:last-child > .button-container > .button.primary{
+    /*font-family: var(--body-font-family);
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 5px 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--background-color);
+    /*background-color: var(--link-color);
+    background-color: rgba(144, 144, 197, 0.99);
+    margin: 16px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height:24px;
+    
+  } */
+  
+  font-size: 1.5em;
+  font-weight:500;
+  letter-spacing: 2.5px;
+  line-height: 0px;
+  float:unset;
+  padding:  1.475rem 2.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #d29751;
+  background: linear-gradient(to top, #aa7938, #aa7938 33%, #d29751);
+  height: 0.5rem !important;
+  /*background-color: #d29751;*/
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0px;
+  height: 0.5rem !important; 
+  margin-block-start: 15%;
+  margin-right: -45px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  text-transform: none;
+  
+  }
+
+  main .logo-container .columns >  div > div:last-child > p:last-child > a.button:any-link {
+    background-color: red;
+    display: inline-block;
+box-sizing: border-box;
+text-decoration: none;
+border: 2px solid transparent;
+padding: 4px 10px;
+text-align: center;
+font-style: normal;
+font-weight: 500;
+font-size: 1.0em;
+cursor: pointer;
+color: var(--background-color);
+background-color: #d29751;
+background: linear-gradient(to bottom, rgba(144, 144, 197, 0.99), #4b4b85 49%, #333366);
+margin: 16px 0;
+  margin-right: 0px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+padding:  0.975rem 4.5rem;
+  }

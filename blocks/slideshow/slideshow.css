@@ -1,0 +1,315 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --overlay-background-color: var(--nav-background-color);
+  --overlay-link-color: #002246;
+  --overlay-link-hover-color: #013367;
+  --slideshow-nav-background: #0006;
+  --heading-font-size-s: 20px;
+}
+
+main .slideshow-container {
+  background-color: transparent;
+}
+
+main .section {
+  padding: 0%;
+}
+
+main .slideshow a.button:any-link, button {
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  line-height: 21px;
+  float: right;
+  padding: 0.775rem 0.9rem;
+  padding-bottom: 1rem;
+  background-color: #d29751;
+  background: linear-gradient(to bottom, rgba(144, 144, 197, 0.99), #4b4b85 49%, #333366);
+  height: 0.5rem !important;
+  /* background-color: #d29751; */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 7px;
+  height: 0.7rem !important;
+  margin-block-start: 15%;
+  margin-right: -55px;
+  margin-bottom: -110px;
+}
+
+main .slideshow-container > div.slideshow-wrapper {
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+main .slideshow {
+  display: flex;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  height: 370px;
+}
+
+main .slideshow.slideshow-transition {
+  scroll-behavior: smooth;
+}
+
+main .slideshow::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* slide */
+main .slideshow > div,
+main .slideshow .slideshow-slide {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow-y: hidden;
+}
+
+main .slideshow > div > * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main .slideshow picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+main .slideshow > div picture {
+  display: block;
+}
+
+/* sections inside slide */
+main .slideshow > div > div {
+  margin: 0;
+  padding: 0;
+}
+
+main .member-subscription-slide h1 {
+  color: #313131;
+}
+
+main .member-subscription-slide p {
+  color: #313131;
+  font-size: 15px;
+}
+
+main .slideshow > div > p {
+  position: relative;
+}
+
+/* slideshow img */
+main .slideshow .slideshow-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+main .slideshow img {
+  object-fit: content;
+  width: 100%;
+  height: 100%;
+}
+
+/*search bar*/
+
+
+
+/* overlay */
+main .slideshow .slideshow-overlay {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 40px 30px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: unset;
+  background: linear-gradient(180deg, transparent 0%, var(--overlay-background-color) 100%);
+}
+
+main .slideshow .slideshow-overlay h1,
+main .slideshow .slideshow-overlay h2 {
+  font-size: 40px;
+  text-align: center;
+  overflow-y: hidden;
+  margin-top: 0;
+}
+
+main .member-subscription-slide.slideshow-container p {
+  width: 70%;
+  margin: 5px 0;
+}
+
+main .member-subscription-slide .slideshow-overlay {
+  justify-content: left;
+  padding: 0 80px;
+  display: block;
+  background: none;
+  position: absolute;
+  top:40%;
+}
+
+main .slideshow .slideshow-btn-wrapper {
+  margin: var(--spacing-s) var(--spacing-xs);
+}
+
+main .slideshow .slideshow-btn {
+  background: var(--overlay-link-color);
+  color: var(--background-color);
+  font-size: var(--body-font-size-s);
+  text-transform: uppercase;
+}
+
+main .slideshow .slideshow-btn::after {
+  content: " ";
+  padding: 0;
+}
+
+main .slideshow .slideshow-btn:hover {
+  background: var(--overlay-link-hover-color);
+}
+
+
+
+/* slider */
+main .carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+
+main .carousel-buttons button {
+  display: block;
+  height: 14px;
+  width: 14px;
+  padding: 0;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: #ccc;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
+
+main .carousel-buttons button.selected {
+  background-color: #000;
+}
+
+main .carousel-buttons button:nth-child(5) {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  main .slideshow {
+    height: 43rem;
+  }
+
+  main .slideshow .slideshow-overlay {
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    display: grid;
+  }
+
+  main .slideshow .slideshow-overlay h1,
+  main .slideshow .slideshow-overlay h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 7em;
+    margin-left: auto;
+    font-weight: 700;
+  }
+
+  /* main .slideshow .slideshow-overlay > p {
+    max-width: 50vw;
+    text-align: left;
+    margin-top: -27em;
+    margin-right: 17em;
+  } */
+  main .slideshow .slideshow-overlay > p{
+  max-width: 50vw;
+  text-align: center;
+  margin-top: -27em;
+  margin-right: 26em;
+  }
+main .slideshow-slide:first-of-type .slideshow-overlay > p{
+  max-width: 50vw;
+  text-align: center;
+  margin-top: -27em;
+  margin-right: 26em;
+  }
+  main .slideshow-slide:nth-of-type(2) .slideshow-overlay > p{
+    max-width: 68vw;
+    text-align: center;
+    margin-top: -40em;
+    margin-right: 1em;
+    }
+    main .slideshow-slide:nth-of-type(2) .slideshow-overlay > h2{
+      max-width: 50vw;
+      text-align: center;
+      margin-top: 5em;
+      margin-right: 19em;
+      margin-left: 19em;
+      width: 800px;
+
+      }
+
+    main .slideshow-slide:nth-of-type(3) .slideshow-overlay > p{
+      max-width: 50vw;
+      text-align: center;
+      margin-top: -25em;
+      margin-right: 18em;
+      }
+
+      main .slideshow-slide:nth-of-type(4) .slideshow-overlay > p{
+        max-width: 50vw;
+        text-align: center;
+        margin-top: 10em;
+        margin-right: 8em;
+        }
+
+}
+
+@media (max-width: 600px) {
+  main .member-subscription-slide .slideshow-overlay {
+    justify-content: left;
+    padding: 0 10px;
+    display: block;
+    background: none;
+    position: absolute;
+    top: 15%;
+    width: 300px;
+}
+
+main .member-subscription-slide .slideshow-container p {
+  width: 100%;
+  margin: 5px 0;
+}
+  }

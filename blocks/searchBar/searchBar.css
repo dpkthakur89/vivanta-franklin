@@ -1,0 +1,40 @@
+
+
+main .searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  height: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  bottom: 100px;
+ 
+  
+}
+main .searchbar-container {
+  top: -150px;
+}
+
+main .searchbar-input {
+  font-family: Calibri;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.7);
+  /*height: 30px;
+  height: 4.0625rem;*/
+  padding-left: 64px;
+  padding-left: 4rem;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+  outline: none;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: none;
+}

@@ -1,14 +1,299 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: rgb(239, 238, 238);
   font-size: var(--body-font-size-s);
+  font-family: -webkit-body;
+  color: black;
 }
 
-footer .footer {
-  max-width: 1200px;
-  margin: auto;
+
+
+
+footer .footer  li,ul,div,p{
+  font-size: 15px;
+  text-align: start;
+  margin-left: initial;
+}
+/*footer .footer > div {
+  display: flex;
+  } */
+
+/* footer .footer > div > div { */
+ /*    /*width: 80%;*/
+ /*    max-width: 10000px; } */
+
+
+
+footer .footer ul {
+    list-style-type: none;
+    display: block;
+  }
+
+footer .footer a{
+  color: black;
 }
 
-footer .footer p {
+
+/* ---buttons start ---*/
+footer .footer .button a:any-link {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer  .button a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+}
+
+/* buttons */
+/*footer .footer  .button {
+    background-color: #d29751;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.65em;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    padding: 7px 50px;
+    font-size: 12px;
+} */
+
+footer .footer  .button{
+  /*font-family: var(--body-font-family);
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 100;
+  cursor: pointer;
+  margin: 16px 0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height:24px;
+  float: right;
+  background-color: rgba(144, 144, 197, 0.99); */
+  font-size: 1em;
+  height: 2.1875rem !important;
+  font-weight:500;
+  letter-spacing: 2.5px;
+  line-height: 21px;
+  float: none;
+  padding:  0.575rem 0.5rem;
+  padding-bottom: 1rem;
+  background-color: #d29751;
+  background: linear-gradient(to bottom, rgba(144, 144, 197, 0.99), #4b4b85 49%, #333366);
+  height: 0.5rem !important;
+  /*background-color: #d29751;*/
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 7px;
+  margin:1px; 
+  bottom: 20%;
+  margin-top:5px;
+ 
+  
+}
+
+
+footer .footer a.button:hover, a.button:focus, button:hover, button:focus  {
+  background-color: white;
+  cursor: pointer;
+}
+
+footer .footer button:disabled, button:disabled:hover {
+  background-color: var(--overlay-background-color);
+  cursor: unset;
+}
+
+footer .footer  a.button.secondary, button.secondary {
+  background-color: unset;
+  border: 2px solid currentcolor;
+  color: var(--text-color)
+}
+/* ---buttons end ---*/
+
+
+
+/* footer .footer > div > div:nth-child(3) {
+  padding-left: 10%;
+
+}
+
+footer .footer > div > div:nth-child(4) {
+  padding-left: 10%;
+} */
+
+footer .footer img {
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+}
+
+footer .footer > div > div:nth-child(1) > ul > li:nth-last-child(1) > ul {
+  background-color: red;
+  display: none;
+}
+
+
+
+
+/* updated foorter */
+
+footer .footer .destination {
+
+  margin-left: 40px;
+}
+
+
+footer .footer .destination-list {
+    list-style-type: none;
+    column-count: 5;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    padding: 0;
+    display: none;
+
+
+  }
+
+
+footer .footer .destination-list > div > div > ul > li:nth-child(1) {
+  /* background-color: red; */
+  display: block;
+  position: relative;
+  margin-top: -5%;
+}
+
+/*
+footer .footer .foot> div > div > ul > li:nth-child(1) {
+   background-color: red; 
+  display: block;
+  position: relative;
+  margin-top: -5%;
+} */
+
+footer .footer > div > div:nth-child(2) {
+  /* background-color: red; */
+  border-top: .06225rem solid #9b9b9b;
+}
+
+
+footer .footer .foot {
+  list-style-type: none;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-count: 3;
+  padding-top: 2%;
+  width: 60%;
+  height: auto;
+  padding-left: 35px;
+  /*column-rule: 2px double #ff00ff;*/
+}
+
+footer .footer .logo {
+  float: right;
+  padding-right: 30%;
+  margin-top: -8.5%;
+  line-height: 400%;
+}
+
+
+footer .footer .brands {
+  position: relative;
+  top: -8em;
+  left: 2em;
+  font-size: 15px;
+  list-style-type: none;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  display: block;
+  margin-top: 40px ! important;
+  margin-top: 10rem ! important;
+  border-top: .06225rem solid #9b9b9b;
+}
+
+
+footer .footer .foot3 {
+  position: relative;
+  top: -19em;
+  left: 60em;
+  line-height: 2.8;
+  
+
+}
+  
+footer .footer  .button {
+float: right;
+position: relative;
+top: -6em;
+left: 11em;
+
+}
+
+footer .footer .loyality {
+  left: 2em;
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+footer .footer .loyalty-list {
+  list-style-type: none;
+  margin-left: -9px;
+  width: 40%;
+  column-count: 2;
+  display: none;
+}
+
+footer .footer .app {
+  float: right; 
+  margin-top: -3.5em;
+  margin-right: -37em;
+  line-height: 1.8;
+}
+
+
+footer .footer .app > div > div > ul > li > picture > img {
+  width: 20%;
+} 
+
+footer .footer .logo > div > div > ul > li > a > picture > img {
+  width: 50px;
+} 
+
+footer .foot > div > div > p:first-child {
+  padding: 0px;
   margin: 0;
 }
+
+
+/** footer .footer .destination::after {
+      content: '';
+      border: 1px solid black; 
+      border-width: 2px 2px 0 0; 
+      transform: rotate(135deg);
+      color: black;
+      height: 10px;
+      width: 11px;
+      display: block;
+      left: 90px;
+      position: relative;
+      bottom: 20px;
+
+  }
+**/

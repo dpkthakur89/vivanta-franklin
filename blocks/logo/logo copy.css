@@ -1,0 +1,83 @@
+main .logo-container {
+    background-color: #1A0032;
+     display: block;
+     font-size: 12px;
+     width: 100%;
+     margin-top: 0%;
+     padding-top: 5px;
+     text-align: center;
+     margin-top: -4%;
+ }
+
+ main .logo-container .columns img {
+    width: 20%;
+
+  }
+
+  main .logo-container .columns p {
+    font-size: 12px;
+     color: white;
+  }
+
+  main .logo-container .columns div {
+   padding-left: 60px;
+   column-gap: normal;
+  }
+
+  main .logo-container .columns div:nth-child(4) {
+    border-right: 2px solid white;
+    margin: 0.5% 0px;
+  }
+
+  main .logo-container .columns div:nth-child(5) img {
+    width: 100%;
+  }
+
+  main .logo-container .columns .button-container a.button:any-link, button {
+    /*font-family: var(--body-font-family);
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 5px 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--background-color);
+    /*background-color: var(--link-color);
+    background-color: rgba(144, 144, 197, 0.99);
+    margin: 16px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height:24px;
+    
+  } */
+  
+  font-size: 1.5em;
+  font-weight:500;
+  letter-spacing: 2.5px;
+  line-height: 21px;
+  float:unset;
+  padding:  0.475rem 0.4rem;
+  padding-bottom: 0.5rem;
+  background-color: orange;
+  height: 0.5rem !important;
+  /*background-color: #d29751;*/
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 0.5rem !important; 
+  margin-block-start: 15%;
+  margin-right: -45px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  background: orange;
+  text-transform: none;
+  
+  }

@@ -3,12 +3,25 @@
   flex-direction: column;
 }
 
-.columns img {
-  width: 100%;
+.columns .button {
+  font-size: 18px;
+  position: relative;
+  background: #FF9600;
+  border-radius: 16px;
+  font-family: calibri;
+  padding: 6px 5px;
+  bottom: 12px;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  cursor: pointer;
 }
+
+
 
 .columns > div > div {
   order: 1;
+  width: 20%;
 }
 
 .columns > div > .columns-img-col {
@@ -23,11 +36,21 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    /*gap: 32px;*/
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+    
   }
 }
+
+main .columns-wrapper {
+  max-width: 100%
+}
+
+.columns p {
+  color: white;
+}
+

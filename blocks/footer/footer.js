@@ -22,4 +22,30 @@ export default async function decorate(block) {
     decorateIcons(footer);
     block.append(footer);
   }
+  var destination = document.querySelector('.destination');
+   var destinationList = document.querySelector('.destination-list');
+destination.addEventListener('click', function() {
+  if (destinationList.style.display === 'none') {
+    destinationList.style.display = 'block';
+    destination.innerHTML = 'Destinations -'
+  } else {
+    destinationList.style.display = 'none';
+    destination.innerHTML = 'Destinations +'
+  }
+});
+
+var loyalty = document.querySelector('.loyality');
+ var loyaltyList = document.querySelector('.loyalty-list')
+loyalty.addEventListener('click', function() {
+  if (loyaltyList.style.display === 'none') {
+    loyaltyList.style.display = 'block';
+    loyalty.innerHTML = 'Loyalty Programs -'
+  } else {
+    loyaltyList.style.display = 'none';
+    loyalty.innerHTML = 'Loyalty Programs +'
+  }
+});
+
 }
+
+/** mumtaz blog script */
